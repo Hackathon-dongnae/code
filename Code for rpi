@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras import layers, models
 
-model = models.load_model(/home/pi/my_model.h5);
+model = models.load_model('/home/pi/my_model.h5');
 model.summary;
 
 c2 = Image.open('/home/pi/test.jpg')
