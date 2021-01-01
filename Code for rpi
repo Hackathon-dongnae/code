@@ -3,23 +3,17 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras import layers, models
 
-img_size = 100      #사진 크기
-Predict = 'C:/Users/sexmachine'         #predict할 jpg 파일 경로
-where = 'C:/Users/sexmachine'           #my_model.h5의 파일 경로
+model = models.load_model(/home/pi/my_model.h5);
+model.summary;
 
-#model 불러오기
-model = models.load_model(where)
-model.summary
-
-#예측 데이터 가공
-c2 = Image.open(Predict)
+c2 = Image.open('/home/pi/test.jpg')
 c2 = c2.convert('RGB')
-c2 = c2.resize((img_size, img_size))
+c2 = c2.resize((100, 100))
 d2 = np.array(c2)
 A = np.concatenate([d2], axis = 0)
-H = A.reshape((1, img_size, img_size, 3))
+H = A.reshape((1, 100, 100, 3))
 H = H/255
 
-#예측
-prediction = model.predict(H)
-print(prediction,'확률로 마스크를 착용하였습니다.')
+
+prediction = model.predict(H);
+print(prediction,'% mask on.');
