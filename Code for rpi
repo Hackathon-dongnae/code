@@ -8,7 +8,7 @@ Predict = 'C:/Users/sexmachine'         #predict할 jpg 파일 경로
 where = 'C:/Users/sexmachine'           #my_model.h5의 파일 경로
 
 #model 불러오기
-model = keras.models.load_model(where)
+model = models.load_model(where)
 model.summary
 
 #예측 데이터 가공
