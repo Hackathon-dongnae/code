@@ -48,8 +48,8 @@ train_size = 70     #Train데이터 갯수
 test_size = 30      #Test데이터 갯수
 epoch = 100         #학습횟수
 Predict = 'C:/Users/sexmachine'         #predict할 jpg 파일 경로
-M_file = 'C:/Users/sungh/m/'            #마스크 착용(1)이미지 파일 경로
-H_file = 'C:/Users/sungh/h/'            #마스크 미착용(0)이미지 파일 경로
+M_file = '/home/pi/Desktop/photo-main/m/'            #마스크 착용(1)이미지 파일 경로
+H_file = '/home/pi/Desktop/photo-main/h/'            #마스크 미착용(0)이미지 파일 경로
 
 #Label 배열 선언
 Train_label = np.array([])
