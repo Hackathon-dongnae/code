@@ -1,12 +1,6 @@
-from PIL import Image, ImageFilter
-import numpy as np
-import tensorflow as tf
-from tensorflow.keras import layers, models
 
-model = models.load_model('/home/pi/my_model.h5');
-model.summary;
 
-c2 = Image.open('/home/pi/test.jpg')
+c2 = Image.open('/home/pi/Desktop/photo-main/m/m_54.jpg')
 c2 = c2.convert('RGB')
 c2 = c2.resize((100, 100))
 d2 = np.array(c2)
