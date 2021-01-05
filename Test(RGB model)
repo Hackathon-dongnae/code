@@ -42,6 +42,7 @@
 from PIL import Image, ImageFilter
 import numpy as np
 import tensorflow as tf
+from tensorflow import keras
 from tensorflow.keras import layers, models
 img_size = 100      #사진 크기
 train_size = 70     #Train데이터 갯수
@@ -711,6 +712,8 @@ print(test_acc)
 ###################################################################
 
 ###################################################################
+
+
 '''
 #예측 데이터 가공
 c2 = Image.open(Predict)
