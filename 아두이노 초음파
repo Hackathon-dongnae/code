@@ -28,11 +28,30 @@ void loop() {
   
   if(distance <=30){
       servo.write(0);
-      servo1.write(0);
+      servo1.write(180);
      delay(300); 
      servo.write(359);
-      servo1.write(359 
-      );    
+      servo1.write(30);    
   }
   delay(1000);   
 }
+
+/*
+import serial
+
+arduino = serial.Serial('COM12', 9600)
+
+
+while(True):
+
+    a=arduino.readline()
+
+    print(a)
+
+    a = a.decode()
+
+    print(a)
+
+    print('')
+
+*/
