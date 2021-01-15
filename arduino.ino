@@ -59,7 +59,7 @@ void ultrasonic(){    //초음파 함수
 }
 
 void loop() {
-  ultrasonic() //초음파 함수 호출
+  ultrasonic(); //초음파 함수 호출
   
   while(Serial.available()>0){
     int value = Serial.parseInt();
