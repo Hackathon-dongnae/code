@@ -63,7 +63,7 @@ void loop() {
   
   while(Serial.available()>0){
     int value = Serial.parseInt();
-    if(value == 1){                   // value == 1면 마스크를 안쓴상태
+    if(value == 1){                   // value == 1면 마스크를 쓴상태
       for (pos = 0; pos <= 105; pos += 1) { 
         // in steps of 1 degree
         myservo.write(pos);              
